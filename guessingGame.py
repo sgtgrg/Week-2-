@@ -14,6 +14,10 @@ print("_".join(blank))
 while lives > 0:
     guess = input("Guess a letter :")
     
+    if not guess.isalpha() or len(guess) != 1:
+      print("Invalid entry! Enter a valid input!")
+      continue
+    
     if guess in word:
         for i in range(len(word)):
            if word [i] == guess:

@@ -9,7 +9,7 @@ class GuessTheWordGame:
         self.already_guessed = set()
     
     def start_game(self):
-     ("Welcome to Word Guessinfg Game!")
+     print("Welcome to Word Guessinfg Game!")
      print("_".join(self.blank))
 
      while self.lives > 0:

@@ -6,7 +6,7 @@ class WordCounter:
     def read_file(self):
         with open(self.filename, "r", encoding="utf-8", errors="ignore") as f:
             self.text = f.read()
-        print("File successfully read the file!")
+        print("File successfully read!")
 
     def count_words(self):
         words = self.text.split()
